@@ -1,5 +1,5 @@
 # select the node.js image to use 
-FROM mongo:5.0
+FROM mongo:latest
 
 # node version
 ENV NODE_VERSION 21
@@ -16,8 +16,9 @@ RUN apt-get install -y build-essential
 # establish the work directory in the container 
 WORKDIR /app
 
-# copy the package.json and pakage.lock.json files 
-COPY package*.json ./
+# Clone the GitHub repository
+RUN apt-get install -y git
+RUN git clone https://github.com/Kevs98/token-app.git .
 
 # install dependencies
 RUN npm install
