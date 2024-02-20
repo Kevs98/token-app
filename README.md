@@ -19,6 +19,10 @@ Para instalar y ejecutar el proyecto localmente, sigue estos pasos:
    ```
 
 3. Inicia la aplicación:
+4. ```bash
+   docker build -t test_sonarq . 
+   docker run --rm -p 3005:3005 test_sonarq
+   ```
 
    ```bash
    npm run start
