@@ -9,13 +9,12 @@ Para instalar y ejecutar el proyecto localmente, sigue estos pasos:
 1. Clona este repositorio en tu máquina local:
 
    ```bash
-   git clone https://github.com/tu-usuario/nombre-del-proyecto.git
+   git clone  https://github.com/Kevs98/token-app.git
    ```
 
 2. Instala las dependencias del proyecto usando npm:
 
    ```bash
-   cd nombre-del-proyecto
    npm install
    ```
 
