@@ -1,5 +1,5 @@
 import { UnauthorizedException } from '@nestjs/common';
-import { AuthService } from '../../../../src/auth/services/auth/auth.service';
+import { AuthService } from 'src/auth/services/auth/auth.service';
 
 export class JwtStrategy {
   constructor(private readonly authService: AuthService) {}

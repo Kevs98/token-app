@@ -1,11 +1,11 @@
 import { Test, TestingModule } from '@nestjs/testing';
 import { AuthService } from './auth.service';
 import { JwtModule } from '@nestjs/jwt';
-import { UserModule } from '../../../../src/user/user.module';
+import { UserModule } from 'src/user/user.module';
 import { forwardRef } from '@nestjs/common';
-import { AuthController } from '../../../../src/auth/controllers/auth/auth.controller';
-import { JwtStrategy } from '../../../../src/auth/strategy/jwt.strategy/jwt.strategy';
-import { RedisService } from '../../../../src/redis/services/redis/redis.service';
+import { AuthController } from 'src/auth/controllers/auth/auth.controller';
+import { JwtStrategy } from 'src/auth/strategy/jwt.strategy/jwt.strategy';
+import { RedisService } from 'src/redis/services/redis/redis.service';
 
 describe('AuthService', () => {
   let service: AuthService;

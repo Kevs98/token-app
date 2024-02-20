@@ -1,9 +1,9 @@
-import { AuthService } from '../../../auth/services/auth/auth.service';
+import { AuthService } from 'src/auth/services/auth/auth.service';
 import { Test, TestingModule } from '@nestjs/testing';
 import { AuthController } from './auth.controller';
-import { RedisService } from '../../../../src/redis/services/redis/redis.service';
+import { RedisService } from 'src/redis/services/redis/redis.service';
 import { UnauthorizedException } from '@nestjs/common';
-import { UserService } from '../../../../src/user/services/user/user.service';
+import { UserService } from 'src/user/services/user/user.service';
 
 describe('AuthController', () => {
   let controller: AuthController;

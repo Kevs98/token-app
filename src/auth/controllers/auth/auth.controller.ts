@@ -1,10 +1,10 @@
 import { Body, Controller, Post, UnauthorizedException } from '@nestjs/common';
 import { ApiTags } from '@nestjs/swagger';
-import { LoginDto } from '../../../../src/auth/dto/login.dto/login.dto';
-import { AuthService } from '../../../../src/auth/services/auth/auth.service';
-import { RedisService } from '../../../../src/redis/services/redis/redis.service';
-import { RefreshTokenDto } from '../../../../src/token/dto/token.dto/refresh-token.dto';
-import { TokenDto } from '../../../../src/token/dto/token.dto/token.dto';
+import { LoginDto } from 'src/auth/dto/login.dto/login.dto';
+import { AuthService } from 'src/auth/services/auth/auth.service';
+import { RedisService } from 'src/redis/services/redis/redis.service';
+import { RefreshTokenDto } from 'src/token/dto/token.dto/refresh-token.dto';
+import { TokenDto } from 'src/token/dto/token.dto/token.dto';
 @ApiTags('Authentication')
 @Controller('auth')
 export class AuthController {

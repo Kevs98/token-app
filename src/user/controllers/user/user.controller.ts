@@ -7,9 +7,9 @@ import {
   UseGuards,
 } from '@nestjs/common';
 import { ApiTags } from '@nestjs/swagger';
-import { UserDto } from '../../../../src/user/dto/user.dto/user.dto';
-import { User } from '../../../../src/user/schema/user.schema';
-import { UserService } from '../../../../src/user/services/user/user.service';
+import { UserDto } from 'src/user/dto/user.dto/user.dto';
+import { User } from 'src/user/schema/user.schema';
+import { UserService } from 'src/user/services/user/user.service';
 @ApiTags('User')
 @Controller('user')
 export class UserController {

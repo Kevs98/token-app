@@ -1,9 +1,8 @@
 import { Test, TestingModule } from '@nestjs/testing';
 import { UserController } from './user.controller';
-import { UserService } from '../../../../src/user/services/user/user.service';
-import { UserModule } from '../../../../src/user/user.module';
+import { UserService } from 'src/user/services/user/user.service';
 import { MongooseModule } from '@nestjs/mongoose';
-import { AuthModule } from '../../../../src/auth/auth.module';
+import { AuthModule } from 'src/auth/auth.module';
 import { UserSchema } from 'src/user/schema/user.schema';
 
 describe('UserController', () => {
